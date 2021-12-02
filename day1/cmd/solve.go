@@ -36,8 +36,8 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		slidingScale, _ := cmd.Flags().GetBool("sliding")
-		solve(slidingScale)
+		part2, _ := cmd.Flags().GetBool("part2")
+		solve(part2)
 	},
 }
 
@@ -48,7 +48,7 @@ func init() {
 
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
-	solveCmd.PersistentFlags().Bool("sliding", false, "Solve using a sliding window")
+	solveCmd.PersistentFlags().Bool("part2", false, "Solve part2")
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
