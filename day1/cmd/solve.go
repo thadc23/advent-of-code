@@ -55,7 +55,7 @@ func init() {
 	// solveCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
 
-func solve(slidingScale bool) {
+func solve(part2 bool) {
 	file, err := os.Open("input.txt")
 	if err != nil {
 		log.Fatal(err)
@@ -63,7 +63,7 @@ func solve(slidingScale bool) {
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 
-	if slidingScale {
+	if part2 {
 		fmt.Println(solveSliding(scanner))
 	} else {
 		fmt.Println(solveStandard(scanner))
