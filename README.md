@@ -8,3 +8,22 @@ Before you know it, you're inside a submarine the Elves keep ready for situation
 Your instincts tell you that in order to save Christmas, you'll need to get all **fifty stars** by December 25th.
 
 Collect stars by solving puzzles. Two puzzles will be made available on each day in the Advent calendar; the second puzzle is unlocked when you complete the first. Each puzzle grants **one star**. Good luck!
+
+
+## Using this repo
+
+Each of the folders contains a standalone go CLI.  Each is named the same as the folder. i.e `day1`, `day2`, etc.
+
+As an example, to run the day1 part1 solution:
+
+```
+$: go install
+$: day1 solve
+```
+
+As an example, to run the day1 part2 solution:
+
+```
+$: go install
+$: day1 solve --part2
+```
