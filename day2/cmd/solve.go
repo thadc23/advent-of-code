@@ -83,9 +83,9 @@ func solvePart1(scanner *bufio.Scanner) {
 			depth -= amount
 		}
 	}
-
 	fmt.Println(horizontal * depth)
 }
+
 func solvePart2(scanner *bufio.Scanner) {
 	aim := 0
 	depth := 0
@@ -103,6 +103,5 @@ func solvePart2(scanner *bufio.Scanner) {
 			aim -= amount
 		}
 	}
-
 	fmt.Println(horizontal * depth)
 }
