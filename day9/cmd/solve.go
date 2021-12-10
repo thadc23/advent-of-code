@@ -26,8 +26,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-type Board [][]string
-
 // solveCmd represents the solve command
 var solveCmd = &cobra.Command{
 	Use:   "solve",
